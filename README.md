@@ -4,7 +4,7 @@ ___
 ___
 Ссылка на курс https://www.udemy.com/course/spring-framework/
 ___
-##Раздел 1: Рассмотрение IoC и DI    
+## Раздел 1: Рассмотрение IoC и DI    
 
 :white_check_mark: _Inversion of Control_    
 :white_check_mark: _Dependency Injection. Знакомство_    
