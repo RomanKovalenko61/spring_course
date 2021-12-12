@@ -15,6 +15,9 @@
     <bean id="myPerson"
           class="com.romankovalenko.spring.Person">
         <property name="pet" ref="myPet"/>
+
+        <property name="surname" value="Kovalenko"/>
+        <property name="age" value="33"/>
     </bean>
 
 
