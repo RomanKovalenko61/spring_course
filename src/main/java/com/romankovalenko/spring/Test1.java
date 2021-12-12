@@ -1,4 +1,4 @@
-package com.zaurtregulov.spring;
+package com.romankovalenko.spring;
 
 public class Test1 {
     public static void main(String[] args) {

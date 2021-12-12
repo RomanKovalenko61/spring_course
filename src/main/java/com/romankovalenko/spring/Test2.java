@@ -1,4 +1,4 @@
-package com.zaurtregulov.spring;
+package com.romankovalenko.spring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
