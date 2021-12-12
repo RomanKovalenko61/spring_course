@@ -10,7 +10,11 @@
 
     <bean id = "myPet"
           class="com.romankovalenko.spring.Cat">
+    </bean>
 
+    <bean id="myPerson"
+          class="com.romankovalenko.spring.Person">
+        <constructor-arg ref="myPet"/>
     </bean>
 
 
