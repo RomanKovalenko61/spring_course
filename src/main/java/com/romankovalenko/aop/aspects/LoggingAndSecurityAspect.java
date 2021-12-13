@@ -9,18 +9,62 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class LoggingAndSecurityAspect {
 
-    @Pointcut("execution(* get*())")
-    private void allGetMethods() {}
-
-    @Before("allGetMethods()")
-    public void beforeGetLoggingAdvice() {
-        System.out.println("beforeGetBookAdvice: Попытка получить книгу/журнал");
+    @Pointcut("execution(* com.romankovalenko.aop.UniLibrary.*(..))")
+    private void allMethodsFromUniLibrary() {
     }
 
-    @Before("allGetMethods()")
-    public void beforeGetSecurityAdvice() {
-        System.out.println("beforeGetSecurityAdvice: Проверка прав на получение книги/журнала");
+    @Pointcut("execution(public void com.romankovalenko.aop.UniLibrary.returnMagazine())")
+    private void returnMagazineFromUniLibrary() {
     }
+
+    @Pointcut("allMethodsFromUniLibrary() && !returnMagazineFromUniLibrary()")
+    private void allMethodsExceptReturnMagazineFromUniLibrary() {
+    }
+
+    @Before("allMethodsExceptReturnMagazineFromUniLibrary()")
+    public void beforeAllMethodsExceptReturnMagazineAdvice() {
+        System.out.println("beforeAllMethodsExceptReturnMagazineAdvice: Log #10");
+    }
+
+//    @Pointcut("execution(* com.romankovalenko.aop.UniLibrary.get*())")
+//    private void allGetMethodsFromUniLibrary() {
+//    }
+//
+//    @Pointcut("execution(* com.romankovalenko.aop.UniLibrary.return*())")
+//    private void allReturnMethodsFromIniLibrary() {
+//    }
+//
+//    @Pointcut("allGetMethodsFromUniLibrary() || allReturnMethodsFromIniLibrary()")
+//    private void allGetAndReturnMethodsFromUniLibrary() {
+//    }
+//
+//    @Before("allGetMethodsFromUniLibrary()")
+//    public void beforeGetLoggingAdvice() {
+//        System.out.println("beforeGetLoggingAdvice: writing Log #1");
+//    }
+//
+//    @Before("allReturnMethodsFromIniLibrary()")
+//    public void beforeReturnLoggingAdvice() {
+//        System.out.println("beforeReturnLoggingAdvice: writing Log #2");
+//    }
+//
+//    @Before("allGetAndReturnMethodsFromUniLibrary()")
+//    public void beforeGetAndReturnLoggingAdvice() {
+//        System.out.println("beforeGetAndReturnLoggingAdvice: writing Log #3");
+//    }
+
+//    @Pointcut("execution(* get*())")
+//    private void allGetMethods() {}
+//
+//    @Before("allGetMethods()")
+//    public void beforeGetLoggingAdvice() {
+//        System.out.println("beforeGetBookAdvice: Попытка получить книгу/журнал");
+//    }
+//
+//    @Before("allGetMethods()")
+//    public void beforeGetSecurityAdvice() {
+//        System.out.println("beforeGetSecurityAdvice: Проверка прав на получение книги/журнала");
+//    }
 
 //    @Before("execution(public void com.romankovalenko.aop.UniLibrary.getBook())")
 //    public void beforeGetBookAdvice() {
