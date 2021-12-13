@@ -21,3 +21,19 @@ ___
 :white_check_mark: _Аннотация @Scope, @PostConstruct, @PreDestroy_    
 :white_check_mark: _Конфигурирование с помощью Java code. Два способа_    
 :white_check_mark: _Аннотация @PropertySource_    
+___
+## Раздел 2: Аспектно Ориентированное Программирование (AOP)
+
+:white_check_mark: _Аспектно Ориентированное Программирование. Знакомство_    
+:white_check_mark: _Advice тип @Before_    
+:white_check_mark: _Выражение Pointcut_    
+:white_check_mark: _Объявление Pointcut_    
+:white_check_mark: _Комбинирование Pointcut_    
+:white_check_mark: _Порядок выполнения Aspect-ов_    
+:white_check_mark: _Join Point_    
+:white_check_mark: _Advice тип @AfterReturning_    
+:white_check_mark: _Advice тип @AfterThrowing_    
+:white_check_mark: _Advice тип @After_    
+:white_check_mark: _Advice тип @Around. Знакомство_    
+:white_check_mark: _Advice тип @Around. Работа с исключениями_
+___
