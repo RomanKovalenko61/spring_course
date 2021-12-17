@@ -1,4 +1,4 @@
-package com.romankovalenko.hibernate_test2.entity;
+package com.romankovalenko.hibernate_one_to_one.entity;
 
 import javax.persistence.*;
 
