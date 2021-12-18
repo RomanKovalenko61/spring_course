@@ -52,7 +52,7 @@ ___
 :white_check_mark: _Отношение Один-к-Одному(Uni-directional)_    
 :white_check_mark: _Отношение Один-к-Одному(Bi-directional)_    
 :white_check_mark: _Отношение Один-ко-Многим(Bi-directional)_  
-:white_check_mark: _Отношение Один-ко-Многим(Uni-directional)_
-:white_check_mark: _Типы загрузок данных: EAGER и LAZY_
-:white_check_mark: _Отношение Многие-ко-многим_
+:white_check_mark: _Отношение Один-ко-Многим(Uni-directional)_    
+:white_check_mark: _Типы загрузок данных: EAGER и LAZY_    
+:white_check_mark: _Отношение Многие-ко-многим_    
 ___
