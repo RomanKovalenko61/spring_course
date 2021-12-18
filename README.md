@@ -37,3 +37,22 @@ ___
 :white_check_mark: _Advice тип @Around. Знакомство_    
 :white_check_mark: _Advice тип @Around. Работа с исключениями_
 ___
+## Раздел 3: Основы Hibernate
+
+:white_check_mark: _Hibernate. Знакомство_    
+:white_check_mark: _Установка MySQL_    
+:white_check_mark: _Подключение Java приложения к БД_    
+:white_check_mark: _Создание связи между классом и таблицей_    
+:white_check_mark: _Сохранение Java объектов в БД_    
+:white_check_mark: _Генерация значение для столба Primary Key_    
+:white_check_mark: _Получение Java объектов из БД_    
+:white_check_mark: _Изменение Java объектов в БД_    
+:white_check_mark: _Удаление Java объектов в БД_    
+:white_check_mark: _Разнообразие отношений между таблицами_    
+:white_check_mark: _Отношение Один-к-Одному(Uni-directional)_    
+:white_check_mark: _Отношение Один-к-Одному(Bi-directional)_    
+:white_check_mark: _Отношение Один-ко-Многим(Bi-directional)_  
+:white_check_mark: _Отношение Один-ко-Многим(Uni-directional)_
+:white_check_mark: _Типы загрузок данных: EAGER и LAZY_
+:white_check_mark: _Отношение Многие-ко-многим_
+___
