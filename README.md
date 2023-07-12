@@ -56,3 +56,7 @@ ___
 :white_check_mark: _Типы загрузок данных: EAGER и LAZY_    
 :white_check_mark: _Отношение Многие-ко-многим_    
 ___
+
+Start work with hibernate:
+1) Create database
+2) Create table employees in your database (look table.sql in resource directory)
