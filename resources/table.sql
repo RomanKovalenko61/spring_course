@@ -79,3 +79,7 @@ CREATE TABLE child_section (
     FOREIGN KEY (child_id) REFERENCES children(id),
     FOREIGN KEY (section_id) REFERENCES section(id)
 );
+
+DROP TABLE child_section;
+DROP TABLE children;
+DROP TABLE section;
