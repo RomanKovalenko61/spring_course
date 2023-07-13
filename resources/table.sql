@@ -53,3 +53,29 @@ CREATE TABLE employees (
     PRIMARY KEY (id),
     FOREIGN KEY (department_id) REFERENCES departments(id)
 );
+
+-- many-to-many
+
+DROP TABLE employees;
+DROP TABLE departments;
+
+CREATE TABLE children (
+    id SERIAL,
+    name VARCHAR(15),
+    age INT,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE section (
+    id SERIAL,
+    name VARCHAR(15),
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE child_section (
+    child_id INT NOT NULL,
+    section_id INT NOT NULL,
+    PRIMARY KEY (child_id, section_id),
+    FOREIGN KEY (child_id) REFERENCES children(id),
+    FOREIGN KEY (section_id) REFERENCES section(id)
+);
